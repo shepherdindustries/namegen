@@ -14,6 +14,7 @@ $('#form').on('submit', e => {
     var items = StartupNameGenerator(input);
     $results.html('');
     items.forEach((item, idx) => {
+        console.log(item, idx)
         $('<a class="result-item" target="_blank">').
         html(`<span>${item}</span>`).
         attr('href', `https://www.namecheap.com/domains/registration/results.aspx?domain=${item.toLowerCase()}.com`).
