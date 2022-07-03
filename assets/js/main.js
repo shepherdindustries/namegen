@@ -15,9 +15,8 @@ $('#form').on('submit', e => {
     $results.html('');
     items.forEach((item, idx) => {
         console.log(item, idx)
-        $('<a class="result-item" target="_blank">').
+        $('<a class="result-item" target="_blank" ahref="https://shopify.pxf.io/5bQ1v2">').
         html(`<span>${item}</span>`).
-        attr('href', `https://www.namecheap.com/domains/registration/results.aspx?domain=${item.toLowerCase()}.com`).
         appendTo($results);
     });
 });
